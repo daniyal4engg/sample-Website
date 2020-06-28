@@ -1,0 +1,51 @@
+body{
+    margin: auto 0;
+}
+.bar{
+    background-color: greenyellow;
+    display: flex;
+    list-style: none;
+    padding: 20px;
+}
+@media only screen and (max-width: 600px){
+    .bar{
+        font-size: 14px;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 300px){
+    .bar{
+        font-size: 10px;
+        padding: 0;
+    }
+}
+a{
+    text-decoration: none;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+}
+.navright{
+    margin-left: auto;
+}
+
+/*----main cover----*/
+.container .main{
+    margin: 0;
+    background-color: rgb(197, 48, 48);
+    display: flex;
+align-items: center;
+justify-content: center;
+height: 50vh;
+}
+/*box*/
+.wrapper .box img{
+display: grid;
+width: 300px;
+height: 300px;
+grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+/* last*/
