@@ -22,7 +22,7 @@ body{
 a{
     text-decoration: none;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     color: black;
 }
 .navright{
@@ -31,21 +31,39 @@ a{
 
 /*----main cover----*/
 .container .main{
+    font-size: 300%;
     margin: 0;
     background-color: rgb(197, 48, 48);
     display: flex;
-align-items: center;
-justify-content: center;
-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
 }
 /*box*/
-.wrapper .box img{
+.wrapper {
+    background-color: rgb(101, 167, 230);
 display: grid;
-width: 300px;
-height: 300px;
-grid-template-columns: repeat(4, 1fr);
-
+grid-gap: 20px;
+grid-template-columns: repeat(auto-fill, minmax(350px,1fr))
+}
+.box > img{
+    width: 100%;
+    
+   
 }
 
-
-/* last*/
+.box{
+    background-color: rgb(102, 99, 99);
+    margin: 20px;
+    padding: 120px;
+    
+    
+}
+/* FOOTER*/
+footer{
+    display: grid;
+    grid-column: 1/-1;
+    justify-content: center;
+    background-color: rgb(148, 126, 84);
+   
+}
