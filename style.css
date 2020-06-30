@@ -2,10 +2,17 @@ body{
     margin: auto 0;
 }
 .bar{
-    background-color: greenyellow;
+    background-color:rgb(101, 167, 230);
+    color: white;
     display: flex;
     list-style: none;
     padding: 20px;
+}
+.sticky{
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 @media only screen and (max-width: 600px){
     .bar{
@@ -25,19 +32,24 @@ a{
     margin: 10px;
     color: black;
 }
+li a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .navright{
     margin-left: auto;
 }
 
 /*----main cover----*/
 .container .main{
-    font-size: 300%;
-    margin: 0;
-    background-color: rgb(197, 48, 48);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 50vh;
+}
+.container .image{
+    width: 30rem;
 }
 /*box*/
 .wrapper {
@@ -46,6 +58,7 @@ display: grid;
 grid-gap: 20px;
 grid-template-columns: repeat(auto-fill, minmax(350px,1fr))
 }
+/* .box (parent) ">" it directly point to its next child*/
 .box > img{
     width: 100%;
     
@@ -56,14 +69,15 @@ grid-template-columns: repeat(auto-fill, minmax(350px,1fr))
     background-color: rgb(102, 99, 99);
     margin: 20px;
     padding: 120px;
-    
-    
+}
+.box:hover{
+    transform: rotate(7deg);
+    cursor: pointer;
 }
 /* FOOTER*/
 footer{
-    display: grid;
-    grid-column: 1/-1;
-    justify-content: center;
-    background-color: rgb(148, 126, 84);
-   
+    background: rgb(39, 38, 38);
+    color: white;
+   text-align: center;
+   border: 1px solid rgb(101, 167, 230);
 }
